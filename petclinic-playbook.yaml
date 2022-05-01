@@ -1,0 +1,10 @@
+---
+- hosts: target
+  become: true
+  tasks:
+  - name: Create PetClinic container
+    community.docker.docker_container:
+      name: petclinic
+      image: ashutoshjha/petclinic:v1.0
+      ports:
+      - "8080:8080"

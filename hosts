@@ -1,0 +1,2 @@
+[target]
+172.20.20.242 ansible_user=ubuntu
